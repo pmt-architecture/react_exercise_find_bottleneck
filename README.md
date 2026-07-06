@@ -1,30 +1,30 @@
-# React + TypeScript + Vite
+# Exercício de Code Review — React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo/a. Este é um exercício curto de **code review**.
 
-Currently, two official plugins are available:
+## Contexto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Em [`src/TodoDashboard.tsx`](src/TodoDashboard.tsx) tens um componente `TodoDashboard`
+que mostra a lista de tarefas de um utilizador, com filtros (todas / ativas / concluídas),
+contagem de concluídas e destaque para tarefas urgentes.
 
-## Expanding the ESLint configuration
+O componente **funciona** (umas coisas melhor que outras), mas está longe de estar
+production-ready. Imagina que te chegou como um Pull Request de um colega.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## O teu objetivo
 
-- Configure the top-level `parserOptions` property like this:
+Faz-lhe um code review como farias a esse PR. Procura:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **Bugs de comportamento** — casos em que o componente faz algo errado ou inesperado.
+- **Anti-patterns de React** — uso de hooks, estado, efeitos, keys, etc.
+- **Código a otimizar / simplificar** — trabalho desnecessário, estado redundante, legibilidade.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Para **cada ponto** que encontrares, explica:
+
+1. **O QUE** está mal (e, se aplicável, em que situação se manifesta).
+2. **COMO** o mudarias (descreve a correção; podes escrever o código se preferires).
+
+Não precisas de encontrar "a resposta certa" única — interessa-nos o teu raciocínio,
+a forma como priorizas os problemas e como comunicas o feedback.
+
+
