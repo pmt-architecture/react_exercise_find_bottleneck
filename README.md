@@ -4,9 +4,9 @@ Bem-vindo/a. Este é um exercício curto de **code review**.
 
 ## Contexto
 
-Em [`src/TodoDashboard.tsx`](src/TodoDashboard.tsx) tens um componente `TodoDashboard`
-que mostra a lista de tarefas de um utilizador, com filtros (todas / ativas / concluídas),
-contagem de concluídas e destaque para tarefas urgentes.
+Em [`src/ExpenseReviewPanel.tsx`](src/ExpenseReviewPanel.tsx) tens um componente `ExpenseReviewPanel`
+que mostra as despesas submetidas por uma equipa, com filtro por estado
+(todas / pendentes / aprovadas), resumo de pendentes e destaque para despesas acima do limite.
 
 O componente **funciona** (umas coisas melhor que outras), mas está longe de estar
 production-ready. Imagina que te chegou como um Pull Request de um colega.

@@ -1,7 +1,7 @@
-import TodoDashboard from "./TodoDashboard";
+import ExpenseReviewPanel from "./ExpenseReviewPanel";
 
 const App = () => {
-  return <TodoDashboard userId={1} />;
+  return <ExpenseReviewPanel teamId={1} />;
 };
 
 export default App;
